@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/form_zhuce.css">
+    <script src="../lib/jquery-3.4.1.js"></script>
+    <script src="../lib/captcha.js"></script>
+    <script src="../lib/md5.js"></script>
+    <script src="../lib/form_zhuce.js"></script>
+</head>
+
+<body>
+
+    <!--公用头部开始-->
+    <div id="banggoMoomoo" class="topWrap">
+        <div class="Ctop Cwrap Lovh">
+            <h1 class="logo Ldb Lfll">
+                返回首页
+                <a href="http://127.0.0.1/banggo/client/src/html/index111.html" class="Ldb Lti1000r">邦购</a>
+            </h1>
+        </div>
+    </div>
+    <input type="hidden" id="serviceValue" vaule="false">
+    <!--公用头部结束-->
+    <!-- <script type="text/javascript">
+    $(function(){
+        var hasMvp = document.getElementById("serviceValue");
+        if(hasMvp){
+            $("#banggoMoomoo").addClass("topWrap");
+        }
+    }); -->
+    <!-- </script> -->
+    <!--注册页面开始-->
+    <div class="Lovh Lpb30">
+        <div class="RG_type Lmt10 Cwrap">
+            <div class="Cwrap Lovh" id="changetab">
+                <!-- 
+                    <a id="normal" class="cstyle">普通注册</a>  -->
+                <a id="mobile" class="cstyle">手机注册</a>
+            </div>
+        </div>
+        <div class="RG_mbox Cwrap Lmt10 Lovh" id="form_div">
+            <!--普通注册步骤一开始-->
+            <!-- 
+                <div class="RG_sbox1 Lfll Lpt20 Lovh" id="normal_div">
+                    <div class="RG_title">
+                        第一步：填写账户信息（以下内容均为必填） <input type="hidden" id="submitType">
+                    </div>
+                    <form name="normal_form" id="normal_form" method="post"
+                        action="/CASServer/custom/registry.do"
+                        method="post">
+                        <input type="hidden" name="service" value="https://bgact.banggo.com//Login/Reg">
+                        <input type="hidden" name="sourceCode" value="">
+                        <input type="hidden" name="little" value="c2766a110a7fac707be967314f84a45a">
+                        <input type="hidden" id="vKey" name="vKey"
+                            value="3C6R" /> <input type="hidden"
+                            id="vValue" name="vValue" value="PM44" />
+                        <div class="item Lovh Lmt15">
+                            <div class="ltext Lfll">用户名：</div>
+                            <div class="Lfll" style="width: 580px;">
+                                <div class="inputlbd Lfll">&nbsp;</div>
+                                <input id="username" name="uid" value=""
+                                    class="input1 Lfll" /> <span class="tips">4-20个字符，一个汉字为两个字符，推荐使用中文会会员名字。一旦注册成功会员名将不能修改。</span>
+                                <span id="user_message" class="errorinfo Lcfl">&nbsp;</span>
+                            </div>
+                        </div>
+                        <div class="item Lovh">
+                            <div class="ltext Lfll">登录密码：</div>
+                            <div class="Lfll" style="width: 580px;">
+                                <div class="inputlbd Lfll">&nbsp;</div>
+                                <input id="password" name="pwd" class="input1 Lfll"
+                                    value="" type="password" /> <span class="tips">6-16个字符，请使用字母加数字或符号的组合密码。</span>
+                                <span id="pwd_message" class="errorinfo Lcfl">&nbsp;</span>
+                            </div>
+                        </div>
+                        <div class="item Lovh">
+                            <div class="ltext Lfll">确认密码：</div>
+                            <div class="Lfll" style="width: 580px;">
+                                <div class="inputlbd Lfll">&nbsp;</div>
+                                <input id="rpassword" name="repwdString" class="input1 Lfll"
+                                    value="" type="password" /> <span class="tips1">请再次输入登录密码。</span>
+                                <span id="rpwd_message" class="errorinfo Lcfl"></span>
+                            </div>
+                        </div>
+                        <div class="item Lovh">
+                            <div class="ltext Lfll">邮箱：</div>
+                            <div class="Lfll" style="width: 580px;">
+                                <div class="inputlbd Lfll">&nbsp;</div>
+                                <input id="email" type="text" class="input1 Lfll" name="email"
+                                    value="" /> <span class="tips1">请输入您的邮箱。</span> <span
+                                    id="email_message" class="errorinfo Lcfl"></span>
+                            </div>
+                        </div>
+    
+                        <div class="item Lovh">
+                            <div class="ltext Lfll">验证码：</div>
+                            <div class="Lfll" style="width: 580px;">
+                                <div class="inputlbd Lfll">&nbsp;</div>
+                                <input type="text" maxlength="4" name="codeNumber"
+                                    class="input2 Lfll" id="img1Code"> <span id="mySpan">
+                                    <img align="middle" id="img1" class="change_img"
+                                    src="https://passport.banggo.com:443/CASServer//custom/loginCode.do" /> <a
+                                    onclick="changeImg('img1')">换一张</a>
+                                </span> <br /> <span id="img1_message" class="errorinfo Lcfl"><font
+                                    color='red'></font> </span>
+                            </div>
+                        </div>
+    
+                        <div class="item Lovh Lmt15">
+                            <div class="ltext Lfll">&nbsp;</div>
+                            <a class="btn btn_acceptAndRegister Lfll"><span>同意以下协议并注册</span>
+                            </a>
+                        </div>
+                        <div class="item">
+    
+                            <div class="ltext Lfll">&nbsp;</div>
+    
+                            <div class="Lfll">
+    
+                                <a href="https://www.banggo.com/article_58.shtml" target="_blank"
+                                    class="useragreement">《邦购用户协议》</a>
+    
+                            </div>
+    
+                        </div>
+    
+                    </form>
+                </div> -->
+            <!--普通注册步骤一结束-->
+            <style>
+                .Lc input {
+                    border-color: #c33 !important;
+                }
+            </style>
+
+            <!--手机注册步骤一开始-->
+            <div class="RG_sbox1 Lfll Lpt20 Lovh" id="mobile_div">
+                <div class="RG_title">新用户注册（以下内容均为必填）<input type="hidden" id="submitType" value="1"></div>
+                <form name="mobile_form" id="mobile_form" method="post" action="">
+                    <input type="hidden" name="service" value="">
+                    <input type="hidden" name="sourceCode" value="">
+                    <input type="hidden" name="little" value="c2766a110a7fac707be967314f84a45a">
+                    <input type="hidden" id="vKey" name="vKey" value="3C6R">
+                    <input type="hidden" id="vValue" name="vValue" value="PM44">
+                    <div class="item Lovh Lmt15">
+                        <div class="ltext Lfll">用户名：</div>
+                        <div class="Lfll">
+                            <div class="inputlbd Lfll">&nbsp;</div>
+                            <input id="mobileusername" name="uid" placeholder="" value="" class="input1 Lfll">
+                            <span class="tips" style="color: red;"></span>
+                            <span id="mobile_user_message" class="errorinfo Lcfl">
+                                <font color="#999">4到10个字符，可以是文字或大小写字母，不包过数字和符号</font>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="item Lovh">
+                        <div class="ltext Lfll">手机号码：</div>
+                        <div class="Lfll">
+                            <div class="inputlbd Lfll">&nbsp;</div>
+                            <input id="mobileNumber" name="mobile" placeholder="" value="" class="input1 Lfll">
+                            <span class="tips" style="color: red;"></span>
+                            <span id="mobileNumber_message" class="errorinfo Lcfl">
+                                <font color="#999">请输入您的手机号码</font>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="item Lovh">
+                        <div class="ltext Lfll">验证码：</div>
+                        <div class="Lfll">
+                            <div class="inputlbd Lfll">&nbsp;</div>
+                            <input type="text" maxlength="4" placeholder="" name="codeNumber" class="input2 Lfll" id="img2Code">
+
+                            <canvas width="120" height="30" id="captcha">
+                            </canvas>
+
+                            <span id="mySpan2">
+                            </span>
+                             
+                            <br>
+                            <span id="img2_message" class="errorinfo Lcfl">
+                                <font color="#999">请输入正确的验证码</font>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="item Lovh">
+                        <div class="ltext Lfll">设置密码：</div>
+                        <div class="Lfll">
+                            <div class="inputlbd Lfll">&nbsp;</div>
+                            <input type="password" maxlength="16" placeholder="" id="passwordA" value=""
+                                class="input1 Lfll">
+                            <span class="tips"></span>
+                           
+                            <span id="mobileNumber_message" class="errorinfo Lcfl">
+                                <font color="#999">请输入您的密码，密码长度4-6字符（大小写字母和数字）</font>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="item Lovh">
+                        <div class="ltext Lfll">确认密码：</div>
+                        <div class="Lfll">
+                            <div class="inputlbd Lfll">&nbsp;</div>
+                            <input type="password" maxlength="16" placeholder="" id="passwordB" value=""
+                                class="input1 Lfll">
+                            <span class="tips"></span>
+                            <span id="mobileNumber_message" class="errorinfo Lcfl">
+                                <font color="#999">请确认您的密码</font>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="item Lovh">
+                        <div class="ltext Lfll">&nbsp;</div>
+                        <a class="btn btn_sendmessage  Lfll Lmr20" id="registerBtn"
+                            style="background: #ccc; text-align: center;">立即注册
+                        </a>
+                    </div>
+
+                    <div style="margin-left: 100px;"><input name="protocol" id="protocol" type="checkbox"> <label
+                            for="protocol">我已阅读并同意</label> <a href="" target="_blank">《邦购用户协议》</a></div>
+                </form>
+            </div>
+
+            <!--手机注册步骤一结束-->
+
+            <!--手机注册步骤二开始-->
+
+
+            <!--注册页面公用，右侧内容开始-->
+            <div class="rarea Lfll">
+                <img src="../images/zhuce.png" alt="">
+            </div>
+            <!--注册页面公用，右侧内容结束-->
+        </div>
+        <!--注册页面结束-->
+
+        <!-- <script type="text/javascript">
+    
+            (function(){
+                //注册方式tab切换
+                $("#changetab a").each(function(i){
+                    $(this).click(function(){
+                        changeImg('img'+(i+2));
+                        $(this).siblings().removeClass();
+                        $(this).addClass('cstyle');
+                        var id = $(this).attr('id');
+                        var current_div = $("#"+id+"_div");
+                        $(current_div).siblings(".RG_sbox1,.RG_sbox2").hide();
+                        $(current_div).fadeIn(300);
+                        $("#submitType").val(i + 1);
+                       });
+                });
+            })();
+              </script> -->
+    </div>
+
+
+
+    <div class="LI_bottom">
+        美特斯邦威集团网站：
+        <a href="">美特斯邦威</a> |
+        <a href="">ME&amp;CITY</a> |
+        <a href="">CH'IN祺</a> |
+        <!-- <a href="http://www.myfstv.com/">时尚秘书</a> | -->
+        <a href="">邦购网</a>
+    </div>
+
+</body>
+
+</html>
