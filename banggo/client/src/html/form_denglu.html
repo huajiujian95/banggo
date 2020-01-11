@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="../css/form_denglu.css">
 	<script src="../lib/jquery-3.4.1.js"></script>
 	<script src="../lib/form_denglu.js"></script>
+	<script src="../lib/md5.js"></script>
 </head>
 
 <body>
@@ -20,7 +21,8 @@
 	<div id="banggoMoomoo" class="topWrap">
 		<div class="Ctop Cwrap Lovh">
 			<h1 class="logo Ldb Lfll">
-				<a href="http://127.0.0.1/--banggo--/banggo/banggo/client/src/html/index111.html" class="Ldb Lti1000r" style="background-image: url(../images/_logo.jpg);">邦购</a>
+				<a href="http://127.0.0.1/--banggo--/banggo/banggo/client/src/html/index111.html" class="Ldb Lti1000r"
+					style="background-image: url(../images/_logo.jpg);">邦购</a>
 			</h1>
 		</div>
 	</div>
@@ -40,7 +42,7 @@
 				<h3 class="t3 " ltn="卡&nbsp;号" ltw="卡密码">卡登录</h3>
 			</div>
 			<div id="jsFormarea" class="formarea Lovh">
-				<div class="formbox Lovh">
+				<div class="formbox Lovh" style="height: 160px;">
 					<form id="fm1" name="fm1" class="fm-v clearfix"
 						action="/CASServer/login?service=http%3A%2F%2Fbgact.banggo.com%2Flogin%3Fr_url%3Dhttp%3A%2F%2Fwww.banggo.com%2F"
 						method="post">
@@ -82,7 +84,7 @@
 							</div>
 							<!-- 新增密码提示信息 end -->
 						</div>
-						<div class="item Lovh ">
+						<!-- <div class="item Lovh ">
 							<div class="ltext Lfll" id="login_type_pwd">验证码：</div>
 							<div class="Lfll">
 								<input id="vcode" name="vcode" class="input1 Lfll required" tabindex="3"
@@ -93,7 +95,7 @@
 								<span id="mySpan"> <img align="middle" id="img1" class="change_img"
 										src="https://passport.banggo.com:443/CASServer//custom/loginCode.do"> <a>换一张</a>
 								</span>
-							</div>
+							</div> -->
 
 							<!-- 新增验证码提示信息 -->
 							<div class="Lfll verify_text">
@@ -122,7 +124,7 @@
 								<input id="lastIp" name="lastIp" type="hidden" value="">
 							</div>
 							<div class="Lfll Lmr10">
-								<a class="btn btn_login" id="log_btn"><span>登录</span> </a>
+								<a class="btn btn_login" id="log_btn" style="text-align: center; background: #999;">登录 </a>
 							</div>
 							<a class="retrieve Lfll" href="">找回密码？
 							</a>
@@ -218,7 +220,7 @@
 		<a href="/">美特斯邦威</a> |
 		<a href="">ME&amp;CITY</a> |
 		<a href="">CH'IN祺</a> |
-		<!-- <a href="http://www.myfstv.com/">时尚秘书</a> | -->
+		<a href="">时尚秘书</a> |
 		<a href="">邦购网</a>
 	</div>
 
