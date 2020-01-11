@@ -4,7 +4,14 @@
 
 
 /* 按钮样式1 */
-.Cbtnstyle1, .Cbtnstyle1 em, .RG_type a, .PF_seltab a, .PF_seltab a small, .PF_seltab .cstyle, .LI_main .loginbtn, .PF_seltab .cstyle small {
+.Cbtnstyle1,
+.Cbtnstyle1 em,
+.RG_type a,
+.PF_seltab a,
+.PF_seltab a small,
+.PF_seltab .cstyle,
+.LI_main .loginbtn,
+.PF_seltab .cstyle small {
     background-image: url(/CASServer/themes/banggo/images/buttonSkin.png);
     background-repeat: no-repeat;
 }
@@ -17,13 +24,37 @@
     display: block;
 }
 
-.btn, .btn span {
+.btn,
+.btn span {
     background-image: url(/CASServer/themes/banggo/images/buttons.png);
     background-repeat: no-repeat;
 }
 
-.icon_member, .icon_vip, /* 全局样式重置 */
-body, div, span, small, p, em, th, td, dl, dt, dd, ul, ol, li,h1, h2, h3, h4, h5, h6, form, textarea {
+.icon_member,
+.icon_vip,
+/* 全局样式重置 */
+body,
+div,
+span,
+small,
+p,
+em,
+th,
+td,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+textarea {
     padding: 0;
     margin: 0;
     line-height: 1.6em;
@@ -33,7 +64,8 @@ a img {
     border: none;
 }
 
-ul, ol {
+ul,
+ol {
     list-style: none;
 }
 
@@ -290,7 +322,8 @@ input.Lmr10 {
 
 *html .Lovh {
     overflow: hidden;
-    zoom:1; }
+    zoom: 1;
+}
 
 .Lovv {
     overflow: visible;
@@ -313,7 +346,8 @@ input.Lmr10 {
 }
 
 /* 页面重定义 */
-small, textarea {
+small,
+textarea {
     font-size: 12px;
 }
 
@@ -327,7 +361,12 @@ body {
     color: #333;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: bold;
 }
 
@@ -376,7 +415,7 @@ h1, h2, h3, h4, h5, h6 {
 .Ctop .logo a {
     width: 220px;
     height: 100px;
-    background: url(../images/logo.jpg) 0 0 no-repeat;
+    background: url(../images/logo.png) 0 0 no-repeat;
 }
 
 .Ctop .rarea {
@@ -401,12 +440,16 @@ h1, h2, h3, h4, h5, h6 {
     background: url(../images/buttonSkin.png) right -50px no-repeat;
 }
 
-.btn, .btn span {
+.btn,
+.btn span {
     background-image: url(../images/buttons.png);
     background-repeat: no-repeat;
 }
 
-.icon_member, .icon_vip, .icon_svip, .icon_share {
+.icon_member,
+.icon_vip,
+.icon_svip,
+.icon_share {
     background-image: url(../images/icons.png);
     background-repeat: no-repeat;
 }
@@ -1003,7 +1046,8 @@ h1, h2, h3, h4, h5, h6 {
 .LI_main {
     margin-top: 25px;
     overflow: hidden;
-    zoom:1; }
+    zoom: 1;
+}
 
 .login_banner {
     width: 640px;
@@ -1073,7 +1117,8 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: auto;
     border-top: 1px solid #F1F1F1;
     overflow: hidden;
-    zoom:1;}
+    zoom: 1;
+}
 
 .LI_main .bottom span {
     line-height: 27px;
@@ -1321,7 +1366,8 @@ h1, h2, h3, h4, h5, h6 {
     color: #F60;
 }
 
-.icon_svip, .icon_share {
+.icon_svip,
+.icon_share {
     background-image: url(../images/banggo/icons.png);
     background-repeat: no-repeat;
 }
@@ -1331,13 +1377,22 @@ h1, h2, h3, h4, h5, h6 {
     background-repeat: no-repeat;
 }
 
-.Ctop .logo a, .LI_top .logo a {
-    background-image: url(../images/banggo/logo.jpg);
+.Ctop .logo a,
+.LI_top .logo a {
+    background-image: url(../images/_logo.jpg);
     background-repeat: no-repeat;
 }
 
 /*.RG_mbox .inputlbd,*/
-.RG_mbox .input1, .RG_mbox .input2, .RG_mbox .suctips, .RG_mbox .checkmail, .RG_mbox .checkphone, .RG_rightinfo, .GP_mbox .title, .LI_main .inputlbd, .RP_successbox .tips {
+.RG_mbox .input1,
+.RG_mbox .input2,
+.RG_mbox .suctips,
+.RG_mbox .checkmail,
+.RG_mbox .checkphone,
+.RG_rightinfo,
+.GP_mbox .title,
+.LI_main .inputlbd,
+.RP_successbox .tips {
     background-image: url(../images/banggo/iconSkin.png);
     background-repeat: no-repeat;
 }
@@ -1363,7 +1418,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* 全局样式重置 */
-body, div, span, small, p, em, th, td, dl, dt, dd, ul, ol, li,h1, h2, h3, h4, h5, h6, form, textarea {
+body,
+div,
+span,
+small,
+p,
+em,
+th,
+td,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+textarea {
     padding: 0;
     margin: 0;
     line-height: 1.6em;
@@ -1373,7 +1449,8 @@ a img {
     border: none;
 }
 
-ul, ol {
+ul,
+ol {
     list-style: none;
 }
 
@@ -1630,7 +1707,8 @@ input.Lmr10 {
 
 *html .Lovh {
     overflow: hidden;
-    zoom:1; }
+    zoom: 1;
+}
 
 .Lovv {
     overflow: visible;
@@ -1653,7 +1731,8 @@ input.Lmr10 {
 }
 
 /* 页面重定义 */
-small, textarea {
+small,
+textarea {
     font-size: 12px;
 }
 
@@ -1667,7 +1746,12 @@ body {
     color: #333;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: bold;
 }
 
