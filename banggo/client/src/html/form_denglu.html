@@ -8,6 +8,7 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="../css/form_denglu.css">
 	<script src="../lib/jquery-3.4.1.js"></script>
+	<script src="../lib/jquery.cookie.js"></script>
 	<script src="../lib/form_denglu.js"></script>
 	<script src="../lib/md5.js"></script>
 </head>
@@ -110,7 +111,7 @@
 						<div class="item Lovh Lmt5">
 							<div class="ltext Lfll">&nbsp;</div>
 							<div class="Lfll">
-								<input id="rememberUsername" name="rememberUsername" class="checkbox1" type="checkbox"
+								<input id="rememberUsername" name="rememberUsername" class="checkbox1" type="checkbox" onclick="savePaw()"
 									checked="checked" tabindex="4"> <label for="rememberUsername" class="Lmr20">
 									记住用户名 </label> <input type="checkbox" name="rememberMe" id="rememberMe" value="true"
 									class="checkbox1" tabindex="5"> <label for="autoLogin" class="Lmr20"> 自动登录 </label>

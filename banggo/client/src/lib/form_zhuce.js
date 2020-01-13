@@ -106,7 +106,7 @@ $(() => {
                 /* 如果注册成功，那么就先提示用户然后再跳转 */
                 if (response.status == "success") {
                     alert(response.msg);
-                    window.location.href = "http://www.banggo.com";
+                    window.location.href = "http://127.0.0.1/--banggo--/banggo/banggo/client/src/html/index111.html";
                 } else {
                     alert(response.msg);
                 }
