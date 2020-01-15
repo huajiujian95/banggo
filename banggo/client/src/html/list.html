@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>banggo商品列表页</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/banggo.css">
+    <script src="../lib/jquery-3.4.1.js"></script>
+    <script src="../lib/list.js"></script>
+</head>
+
+<body>
+    <div id="headID"></div>
+
+
+    <div class="mbshop_listBreadNav">
+        <div class="mbshop_breadNav">
+            <!--面包屑导航-->
+            <div class="mbshop_breadNavLink">
+                <a href="http://127.0.0.1/--banggo--/banggo/banggo/client/src/html/index111.html" alt="邦购网首页">邦购网首页</a>
+                &gt; <a href="_a.shtml" alt="所有分类">所有分类</a>
+                &gt; <a href="_3.shtml" alt="男装">男装</a>
+                &gt; <a href="_16.shtml" alt="衬衫">衬衫</a>
+                &gt; <a href="_115.shtml" alt="长袖衬衫">长袖衬衫</a>
+            </div>
+            <div class="mbshop_searchFilLink">
+            </div>
+            <!--二级搜索框-->
+            <form target="_self" id="secondForm" action="https:_115.shtml" method="get"
+                name="quick_search">
+                <div class="mbshop_secSearch">
+                    <input type="text" name="word" value="" autocomplete="off">
+                    <input id="secSeach" type="button" title="搜索">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="mbshop_container">
+        <div class="mbshop_search_lt_frame">
+            <!--1=>[mbshop_search_btn_updown_02,mbshop_search_nav_on],2=>[mbshop_search_more_less_02,mbshop_search_nav_on]，3=>[mbshop_search_nav_on] -->
+            <div class="mbshop_search_lt_box">
+                <h1>分类</h1>
+                <ul>
+                    <li>
+                        <a class="mbshop_search_nav_01"
+                            href="a_a_a_a_a_a_a_a_97-1741.shtml">长袖衬衫</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 推荐引擎 -->
+            <div class="mbshop_pd_des_left">
+
+
+                <!-- 看了又看 -->
+                <div id="showSearch">
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
+        <div class="mbshop_search_rt_frame">
+            <!-- searchOption start -->
+            <div class="mbshop_searchFrame">
+                <!-- 您是不是找？ -->
+                <div class="mbshop_searchOption" style="height: 50px;">
+                    <!-- category-->
+                    <!-- category over -->
+                    <!-- filter vertical -->
+                    <div id="mainSearch">
+                        <div class="mbshop_searchItem">
+                            <span id="brand">品牌</span>
+                            <div class="mbshop_searchItemContent">
+                                <a href="a_MB_a_a_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>Metersbonwe</i>
+                                </a>
+                                <a href="a_CHOKNESS_a_a_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>CHOKNESS</i>
+                                </a>
+                                <a href="a_MC_a_a_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>ME＆CITY</i>
+                                </a>
+                                <a href="a_SABINEPAUL_a_a_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>赛宾保罗</i>
+                                </a>
+                                <a href="a_MILANGQISHI_a_a_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>米郎骑士</i>
+                                </a>
+                                <a href="a_QG_a_a_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>CH'IN 祺</i>
+                                </a>
+                                <a href="a_LMSALE_a_a_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>乐麦尚品</i>
+                                </a>
+                                <a href="a_BOZHAN_a_a_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>铂绽</i>
+                                </a>
+                                <a href="a_JAENMEN_a_a_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>JAENMEN简单人</i>
+                                </a>
+                                <a href="a_OVERMORROW_a_a_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>OverMorrow</i>
+                                </a>
+                                <a
+                                    href="a_PIONEER-CAMPTUOLUZHE_a_a_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>Pioneer Camp拓路者</i>
+                                </a>
+                                <a href="a_PLAYBOY_a_a_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>花花公子</i>
+                                </a>
+                                <a href="a_LEECOOPER_a_a_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>LeeCooper</i>
+                                </a>
+                                <a href="a_CELUCASN_a_a_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>潮流前线</i>
+                                </a>
+                                <a href="a_4M_a_a_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>4M</i>
+                                </a>
+                                <a href="a_LANSBOTER_a_a_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>莱诗伯特</i>
+                                </a>
+                                <a href="a_BEINADA_a_a_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>倍纳达</i>
+                                </a>
+                                <a href="a_FANLUO_a_a_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>凡洛</i>
+                                </a>
+                                <a href="a_JEEPSPIRIT_a_a_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>JeepSpirit</i>
+                                </a>
+                                <a href="a_FUHAOGONGSHE_a_a_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>符号公社</i>
+                                </a>
+                                <a href="a_TISUFEE_a_a_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>TISUFEE</i>
+                                </a>
+                                <a href="a_DIRETECS_a_a_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>DIRETECS 帝德士</i>
+                                </a>
+                                <a
+                                    href="a_MARKFAIRWHALE_a_a_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>马克华菲</i>
+                                </a>
+                                <a href="a_MNSJ_a_a_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>梦娜世家</i>
+                                </a>
+                                <a href="a_YUZHAOLIN_a_a_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>俞兆林</i>
+                                </a>
+                                <a href="a__a_a_a_a_a_a_a_a_97-1741.shtml">
+                                    <i></i>
+                                </a>
+                                <!-- 单独筛选项的内容 -->
+                            </div>
+                            <div class="mbshop_searchMore" style="display: block;">更多</div>
+                        </div>
+                        <div class="mbshop_searchItem">
+                            <span id="price">价格</span>
+                            <div class="mbshop_searchItemContent">
+                                <a href="0-69_a_a_a_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>0-69</i>
+                                </a>
+                                <a href="70-139_a_a_a_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>70-139</i>
+                                </a>
+                                <a href="140-199_a_a_a_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>140-199</i>
+                                </a>
+                                <a href="200-599_a_a_a_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>200-599</i>
+                                </a>
+                                <!-- 单独筛选项的内容 -->
+                                <!-- 价格区间 -->
+                                <div class="new_mbshop_pricequjian">
+                                    <input type="text" id="start_price" value="">
+                                    <b> - </b>
+                                    <input type="text" id="end_price" value="">
+                                    <input type="hidden" id="maxPrice" value="538.9">
+                                    <input type="hidden" id="minPrice" value="19.9">
+                                    <input type="button" class="mbshop_ie_btn_s_f_sure" name="btn_sure" value="确认">
+                                    <span id="notice-msg"
+                                        style="width:auto;padding-left:10px;border:0;color:red"></span>
+                                </div>
+                            </div>
+                            <div class="mbshop_searchMore">更多</div>
+                        </div>
+                        <div class="mbshop_searchItem">
+                            <span id="size">尺寸</span>
+                            <div class="mbshop_searchItemContent">
+                                <a href="a_677s_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>160</i>
+                                </a>
+                                <a href="a_678s_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>165</i>
+                                </a>
+                                <a href="a_679s_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>170</i>
+                                </a>
+                                <a href="a_680s_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>175</i>
+                                </a>
+                                <a href="a_681s_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>180</i>
+                                </a>
+                                <a href="a_682s_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>185</i>
+                                </a>
+                                <a href="a_683s_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>190</i>
+                                </a>
+                                <a href="a_767s_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>XL</i>
+                                </a>
+                                <a href="a_770s_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>其它</i>
+                                </a>
+                                <a href="a_768s_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>XXL</i>
+                                </a>
+                                <a href="a_766s_a_a_a_a_a_a_97-1741.shtml">
+                                    <i>S</i>
+                                </a>
+                                <!-- 单独筛选项的内容 -->
+                            </div>
+                            <div class="mbshop_searchMore">更多</div>
+                        </div>
+                        <div class="mbshop_searchItem">
+                            <span id="97">性别</span>
+                            <div class="mbshop_searchItemContent">
+                                <a href="a_a_a_a_a_a_a_a_97-202s.shtml">
+                                    <i>男</i>
+                                </a>
+                                <!-- 单独筛选项的内容 -->
+                            </div>
+                            <div class="mbshop_searchMore">更多</div>
+                        </div>
+                        <!-- filter vertical over -->
+                    </div>
+                    <!-- filter horizontal -->
+
+                    <div class="seach_Box">
+                        <b>高级筛选</b>
+                        <!-- 遍历开始 -->
+                        <!-- 尺寸只有3级分类以上显示，年龄在2级分类以上显示 -->
+                        <div class="mbshop_searchItemshuxing">
+                            <!-- <span id="85">季节</span> -->
+                            <div class="mbshop_new_searchItemOption">
+                                <a class="mbshop_new_searchItemOption_menu"><i>
+                                        季节 </i><em></em></a>
+                                <div class="mbshop_new_searchItemOption_box">
+                                    <a
+                                        href="a_a_a_a_a_a_a_a_97-1741|85-102s.shtml">
+                                        秋</a>
+                                    <a
+                                        href="a_a_a_a_a_a_a_a_97-1741|85-100s.shtml">
+                                        春</a>
+                                    <a
+                                        href="a_a_a_a_a_a_a_a_97-1741|85-101s.shtml">
+                                        冬</a>
+                                    <a href="a_a_a_a_a_a_a_a_97-1741|85-99s.shtml">
+                                        常年款</a>
+                                    <a
+                                        href="a_a_a_a_a_a_a_a_97-1741|85-103s.shtml">
+                                        夏</a>
+                                    <a class="mbshop_new_searchItemOption_all"
+                                        href="a_a_a_a_a_a_a_a.shtml">
+                                        全部季节 </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 遍历结束 -->
+                        <!-- 遍历开始 -->
+                        <!-- 尺寸只有3级分类以上显示，年龄在2级分类以上显示 -->
+                        <div class="mbshop_searchItemshuxing">
+                            <!-- <span id="3">场合</span> -->
+                            <div class="mbshop_new_searchItemOption">
+                                <a class="mbshop_new_searchItemOption_menu"><i>
+                                        场合 </i><em></em></a>
+                                <div class="mbshop_new_searchItemOption_box">
+                                    <a href="a_a_a_a_a_a_a_a_97-1741|3-76s.shtml">
+                                        休闲</a>
+                                    <a href="a_a_a_a_a_a_a_a_97-1741|3-57s.shtml">
+                                        都市</a>
+                                    <a href="a_a_a_a_a_a_a_a_97-1741|3-61s.shtml">
+                                        简约</a>
+                                    <a href="a_a_a_a_a_a_a_a_97-1741|3-56s.shtml">
+                                        潮流</a>
+                                    <a href="a_a_a_a_a_a_a_a_97-1741|3-77s.shtml">
+                                        摇滚</a>
+                                    <a href="a_a_a_a_a_a_a_a_97-1741|3-62s.shtml">
+                                        街头</a>
+                                    <a href="a_a_a_a_a_a_a_a_97-1741|3-73s.shtml">
+                                        商务</a>
+                                    <a href="a_a_a_a_a_a_a_a_97-1741|3-75s.shtml">
+                                        校园</a>
+                                    <a href="a_a_a_a_a_a_a_a_97-1741|3-59s.shtml">
+                                        复古</a>
+                                    <a href="a_a_a_a_a_a_a_a_97-1741|3-64s.shtml">
+                                        聚会</a>
+                                    <a href="a_a_a_a_a_a_a_a_97-1741|3-68s.shtml">
+                                        派对</a>
+                                    <a href="a_a_a_a_a_a_a_a_97-1741|3-58s.shtml">
+                                        度假</a>
+                                    <a href="a_a_a_a_a_a_a_a_97-1741|3-63s.shtml">
+                                        居家</a>
+                                    <a href="a_a_a_a_a_a_a_a_97-1741|3-72s.shtml">
+                                        日韩</a>
+                                    <a href="a_a_a_a_a_a_a_a_97-1741|3-79s.shtml">
+                                        运动户外</a>
+                                    <a class="mbshop_new_searchItemOption_all"
+                                        href="a_a_a_a_a_a_a_a.shtml">
+                                        全部场合 </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 遍历结束 -->
+                        <!-- 遍历开始 -->
+                        <!-- 尺寸只有3级分类以上显示，年龄在2级分类以上显示 -->
+                        <div class="mbshop_searchItemshuxing">
+                            <!-- <span id="86">系列</span> -->
+                            <div class="mbshop_new_searchItemOption">
+                                <a class="mbshop_new_searchItemOption_menu"><i>
+                                        系列 </i><em></em></a>
+                                <div class="mbshop_new_searchItemOption_box">
+                                    <a
+                                        href="a_a_a_a_a_a_a_a_97-1741|86-794s.shtml">
+                                        其它</a>
+                                    <a
+                                        href="a_a_a_a_a_a_a_a_97-1741|86-821s.shtml">
+                                        休闲</a>
+                                    <a
+                                        href="a_a_a_a_a_a_a_a_97-1741|86-819s.shtml">
+                                        潮流</a>
+                                    <a
+                                        href="a_a_a_a_a_a_a_a_97-1741|86-786s.shtml">
+                                        都市</a>
+                                    <a
+                                        href="a_a_a_a_a_a_a_a_97-1741|86-820s.shtml">
+                                        商务</a>
+                                    <a
+                                        href="a_a_a_a_a_a_a_a_97-1741|86-792s.shtml">
+                                        基本</a>
+                                    <a class="mbshop_new_searchItemOption_all"
+                                        href="a_a_a_a_a_a_a_a.shtml">
+                                        全部系列 </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 遍历结束 -->
+                        <!-- 遍历开始 -->
+                        <!-- 尺寸只有3级分类以上显示，年龄在2级分类以上显示 -->
+                        <div class="mbshop_searchItemshuxing">
+                            <!-- <span id="10">版型</span> -->
+                            <div class="mbshop_new_searchItemOption">
+                                <a class="mbshop_new_searchItemOption_menu"><i>
+                                        版型 </i><em></em></a>
+                                <div class="mbshop_new_searchItemOption_box mbshop_new_searchItem_right">
+                                    <a href="a_a_a_a_a_a_a_a_97-1741|10-32s.shtml">
+                                        修身</a>
+                                    <a class="mbshop_new_searchItemOption_all"
+                                        href="a_a_a_a_a_a_a_a.shtml">
+                                        全部版型 </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 遍历结束 -->
+                        <!-- 遍历开始 -->
+                        <!-- 尺寸只有3级分类以上显示，年龄在2级分类以上显示 -->
+                        <div class="mbshop_searchItemshuxing">
+                            <!-- <span id="6">面料/材质</span> -->
+                            <div class="mbshop_new_searchItemOption">
+                                <a class="mbshop_new_searchItemOption_menu"><i>
+                                        面料/材质 </i><em></em></a>
+                                <div class="mbshop_new_searchItemOption_box">
+                                    <a href="a_a_a_a_a_a_a_a_97-1741|6-153s.shtml">
+                                        棉</a>
+                                    <a href="a_a_a_a_a_a_a_a_97-1741|6-201s.shtml">
+                                        其它</a>
+                                    <a href="a_a_a_a_a_a_a_a_97-1741|6-158s.shtml">
+                                        牛津纺</a>
+                                    <a href="a_a_a_a_a_a_a_a_97-1741|6-184s.shtml">
+                                        羊毛</a>
+                                    <a href="a_a_a_a_a_a_a_a_97-1741|6-118s.shtml">
+                                        弹力</a>
+                                    <a href="a_a_a_a_a_a_a_a_97-1741|6-145s.shtml">
+                                        麻</a>
+                                    <a href="a_a_a_a_a_a_a_a_97-1741|6-160s.shtml">
+                                        牛仔</a>
+                                    <a href="a_a_a_a_a_a_a_a_97-1741|6-165s.shtml">
+                                        绒</a>
+                                    <a class="mbshop_new_searchItemOption_all"
+                                        href="a_a_a_a_a_a_a_a.shtml">
+                                        全部面料/材质 </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 遍历结束 -->
+                        <!-- 遍历开始 -->
+                        <!-- 尺寸只有3级分类以上显示，年龄在2级分类以上显示 -->
+                        <div class="mbshop_searchItemshuxing">
+                            <!-- <span id="color">颜色</span> -->
+                            <div class="mbshop_new_searchItemOption">
+                                <a class="mbshop_new_searchItemOption_menu"><i>
+                                        颜色 </i><em></em></a>
+                                <div class="mbshop_new_searchItemOption_box">
+                                    <a href="11_a_a_a_a_a_a_a_97-1741.shtml">
+                                        <b class="newbgcolorblock_11"></b>蓝色系</a>
+                                    <a href="6_a_a_a_a_a_a_a_97-1741.shtml">
+                                        <b class="newbgcolorblock_6"></b>白色系</a>
+                                    <a href="5_a_a_a_a_a_a_a_97-1741.shtml">
+                                        <b class="newbgcolorblock_5"></b>灰色系</a>
+                                    <a href="13_a_a_a_a_a_a_a_97-1741.shtml">
+                                        <b class="newbgcolorblock_13"></b>黑色系</a>
+                                    <a href="//search.banggo.com/search/ a_115_a_a_9_a_a_a_a_a_a_a_97-1741.shtml">
+                                        <b class="newbgcolorblock_9"></b>红色系</a>
+                                    <a href="1_a_a_a_a_a_a_a_97-1741.shtml">
+                                        <b class="newbgcolorblock_1"></b>卡其系</a>
+                                    <a href="10_a_a_a_a_a_a_a_97-1741.shtml">
+                                        <b class="newbgcolorblock_10"></b>绿色系</a>
+                                    <a href="12_a_a_a_a_a_a_a_97-1741.shtml">
+                                        <b class="newbgcolorblock_12"></b>黄色系</a>
+                                    <a href="7_a_a_a_a_a_a_a_97-1741.shtml">
+                                        <b class="newbgcolorblock_7"></b>紫色系</a>
+                                    <a href="2_a_a_a_a_a_a_a_97-1741.shtml">
+                                        <b class="newbgcolorblock_2"></b>杏色系</a>
+                                    <a href="8_a_a_a_a_a_a_a_97-1741.shtml">
+                                        <b class="newbgcolorblock_8"></b>粉色系</a>
+                                    <a href="844_a_a_a_a_a_a_a_97-1741.shtml">
+                                        <b class="newbgcolorblock_844"></b>混色系</a>
+                                    <a href="4_a_a_a_a_a_a_a_97-1741.shtml">
+                                        <b class="newbgcolorblock_4"></b>橙色系</a>
+                                    <a class="mbshop_new_searchItemOption_all"
+                                        href="a_a_a_a_a_a_a_a_97-1741.shtml">
+                                        全部颜色 </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 遍历结束 -->
+                        <!-- 遍历开始 -->
+                        <!-- 尺寸只有3级分类以上显示，年龄在2级分类以上显示 -->
+                        <div class="mbshop_searchItemshuxing">
+                            <!-- <span id="8">功能</span> -->
+                            <div class="mbshop_new_searchItemOption">
+                                <a class="mbshop_new_searchItemOption_menu"><i>
+                                        功能 </i><em></em></a>
+                                <div class="mbshop_new_searchItemOption_box">
+                                    <a href="a_a_a_a_a_a_a_a_97-1741|8-152s.shtml">
+                                        其它</a>
+                                    <a class="mbshop_new_searchItemOption_all"
+                                        href="a_a_a_a_a_a_a_a.shtml">
+                                        全部功能 </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 遍历结束 -->
+                    </div>
+                </div>
+            </div>
+            <!--search alert-->
+            <div class="mbshop_searchAlert">
+                <!-- 找到商品提示 -->
+                为您找到 <b>987</b> 个商品
+            </div>
+            <!-- productFilter start-->
+            <div class="mbshop_pdFilter">
+                <div class="mbshop_pdFilterItem">
+                    <a class="mbshop_pdFilterHover"
+                        href="" alt="默认">默 认</a>
+                    <a class="mbshop_pdFilterUp"
+                        href="" alt="上架时间">新品</a>
+                    <a class="mbshop_pdFilterUp"
+                        href="" alt="销量">销量</a>
+                    <a href="" alt="折扣">折扣</a>
+                    <a href="" alt="价格">价格</a>
+                </div>
+                <div class="mbshop_pdPaginationTop">
+                    <div class="mbshop_pdPaginationAct">
+
+                        <style>
+                            .mbshop_container .currentPage {
+                                color: white;
+                                background-color: #999999;
+                            }
+                        </style>
+
+                        <b>1/25</b>页 &nbsp;共<b>&nbsp;987&nbsp;</b>个商品 &nbsp; <a
+                            href="/search/a_115_a_a_a_a_a_a_a_a_a_a_97-1741.shtml?currentPage=2">下一页</a>
+                    </div>
+                    <div class="mbshop_pdPaginationShowPd">
+                        <label><input type="radio" id="style" name="searchType" value="1" checked=""><span
+                                style="cursor:pointer">款式</span></label>
+                        <label><input type="radio" id="color" name="searchType" value="2"><span
+                                style="cursor:pointer">色系</span></label>&nbsp;&nbsp;
+                        <label><input type="checkbox" id="checkstock">
+                            <span style="cursor:pointer">仅显示有货</span></label>
+                    </div>
+                </div>
+            </div>
+            <!--productList area-->
+            <div class="mbshop_pdList">
+                <ul class="mbshop_listPdBox">
+                    <!--循环开始-->
+
+                    <!-- <li class="mbshop_listPdCon" data-icon="https://img.banggo.com/sources/cms/banggo2017/PC/bq191820_5.png" data-site="">
+    	     <a href="https://www.banggo.com/goods/722493.shtml" class="mbshop_listPdImg" id="mbshop_listPdImg" target="_blank"> -->
+                    <!-- 饰品、鞋类、平铺图，img上加该样式"mbshop_pdList_spHeight" -->
+                    <!-- <img src="//pic.banggo.com/sources/images/goods/MB/722493/722493_00.jpg?x-oss-process=image/resize,m_fill,w_300,h_410" data-original="//pic.banggo.com/sources/images/goods/MB/722493/722493_00.jpg?x-oss-process=image/resize,m_fill,w_300,h_410" alt="男基本款衬衫" style="display: block;">
+            <div class="rigth_bottom product_tag_layout">
+            <img src="https://img.banggo.com/sources/cms/banggo2017/PC/bq191820_5.png" alt="通栏">
+			<div class="active-price-box">
+			<span class="active-price"><label>￥</label>41.9</span>
+				</div>
+			 </div>
+                            
+        </a>
+				<span class="mbshop_listPdText fl goodlist_brandname">
+		<a href="https://search.banggo.com/brand/a_a_a_MB.shtml" target="_blank">Metersbonwe</a>
+				<label class="goodlist_discount">4.1折</label>
+				</span> 
+		<span class="mbshop_listPdText fl"><a href="https://www.banggo.com/goods/722493.shtml" target="_blank">男基本款衬衫</a></span> 
+		<span class="mbshop_listPdText">
+				<b>￥69.9</b>
+				<i>￥169</i>
+				</span> -->
+                    <!-- 颜色切换 -->
+                    <!-- <div class="mbshop_listPdColorFrame" id="mbshop_listPdColorId0">
+			<span class="mbshop_listPdColorBtnLf mbshop_disabled" title="向左" style="display: none;"></span>
+			<div class="mbshop_listPdColorScroll">
+				<div class="mbshop_listPdColor">
+			<input type="hidden" value="//pic.banggo.com/sources/images/goods/MB/722493/722493_00.jpg?x-oss-process=image/resize,m_fill,w_90">
+			<a href="javascript:void(0)"><img src="//pic.banggo.com/sources/images/goods/MB/722493/722493_00_00.jpg?x-oss-process=image/resize,m_fill,w_90" data-original="//pic.banggo.com/sources/images/goods/MB/722493/722493_00_00.jpg?x-oss-process=image/resize,m_fill,w_90" alt="" style="display: block;"></a>
+			<a href="javascript:void(0)"><img src="//pic.banggo.com/sources/images/goods/MB/722493/722493_40_00.jpg?x-oss-process=image/resize,m_fill,w_90" data-original="//pic.banggo.com/sources/images/goods/MB/722493/722493_40_00.jpg?x-oss-process=image/resize,m_fill,w_90" alt="" style="display: block;"></a>
+																                         </div>
+			</div>
+			<span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+	   	</div> -->
+                    <!-- <span class="mbshop_listPdText2">
+                    已售出：<= $v['saleCount']?>件
+		</span> -->
+
+                    <!-- </li> -->
+
+                    <!--循环结束-->
+                </ul>
+            </div>
+            <!-- 分页 -->
+            <div class="mbshop_container" style="width:980px !important">
+                <div class="mbshop_publicPagination" style="width: 384px; margin: 35px auto 0px; float: none;">
+                    <style>
+                        .mbshop_container .currentPage {
+                            color: white;
+                            background-color: #999999;
+                        }
+                    </style>
+                    <!-- <a class="currentPage">1</a>  
+ <a href="/search/a_115_a_a_a_a_a_a_a_a_a_a_97-1741.shtml?currentPage=2">2</a>  
+ <a href="/search/a_115_a_a_a_a_a_a_a_a_a_a_97-1741.shtml?currentPage=3">3</a>  
+ <a href="/search/a_115_a_a_a_a_a_a_a_a_a_a_97-1741.shtml?currentPage=4">4</a>  
+ <a href="/search/a_115_a_a_a_a_a_a_a_a_a_a_97-1741.shtml?currentPage=5">5</a>  
+ <a href="/search/a_115_a_a_a_a_a_a_a_a_a_a_97-1741.shtml?currentPage=6">6</a>  
+ <a href="/search/a_115_a_a_a_a_a_a_a_a_a_a_97-1741.shtml?currentPage=7">7</a>   
+ <a href="/search/a_115_a_a_a_a_a_a_a_a_a_a_97-1741.shtml?
+ currentPage=2">下一页</a>    
+ <a href="/search/a_115_a_a_a_a_a_a_a_a_a_a_97-1741.shtml?currentPage=25">尾 页</a>    -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footID"></div>
+
+</body>
+
+</html>

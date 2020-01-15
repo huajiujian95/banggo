@@ -125,3 +125,26 @@ $(() => {
     let lunbo = new Lunbotu();
     lunbo.init();
 })
+
+// -----------首页数据渲染-------------
+// $(() => {
+//     let ui = document.querySelector(".");
+//     console.log(ui);
+//     let renderUI = (arrData) => {
+//         let html = arrData.map(ele => {
+//             return ``
+//         }).join("");
+//         ui.innerHTML = html;
+//     }
+
+//     $.ajax({
+//         type: "get",
+//         url: "../../../server/index.php",
+//         dataType: "json",
+//         success: function (data) {
+//             // console.log(data);
+//             renderUI(data);
+//         }
+//     });
+
+// })
